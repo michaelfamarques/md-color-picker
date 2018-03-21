@@ -916,7 +916,7 @@ angular.module('mdColorPicker', [])
 
 
 							$scope.value = options.value;
-							$scope.default = options.defaultValue;
+							$scope.defaultValue = options.defaultValue;
 							$scope.random = options.random;
 
 							$scope.cancelText = options.cancelText;
