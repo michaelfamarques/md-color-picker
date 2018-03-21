@@ -447,6 +447,8 @@ angular.module('mdColorPicker', [])
 				clickOutsideToClose: '=?',
 				skipHide: '=?',
 				preserveScope: '=?',
+				cancelText: '@?',
+				selectText: '@?',
 
 				// Advanced options
 				mdColorClearButton: '=?',
@@ -541,6 +543,8 @@ angular.module('mdColorPicker', [])
 						random: $scope.random,
 						clickOutsideToClose: $scope.clickOutsideToClose,
 						hasBackdrop: $scope.hasBackdrop,
+						cancelText: $scope.cancelText,
+						selectText: $scope.selectText,
 						skipHide: $scope.skipHide,
 						preserveScope: $scope.preserveScope,
 
@@ -870,6 +874,8 @@ angular.module('mdColorPicker', [])
 				options.focusOnOpen = options.focusOnOpen === undefined ? false : options.focusOnOpen;
 				options.preserveScope = options.preserveScope === undefined ? true : options.preserveScope;
 				options.skipHide = options.skipHide === undefined ? true : options.skipHide;
+				options.cancelText = options.cancelText === undefined ? 'Cancel' : options.cancelText;
+				options.selectText = options.selectText === undefined ? 'Select' : options.selectText;
 
 				// mdColorPicker Properties
 				options.mdColorAlphaChannel = options.mdColorAlphaChannel === undefined ? false : options.mdColorAlphaChannel;
@@ -905,6 +911,9 @@ angular.module('mdColorPicker', [])
 							$scope.value = options.value;
 							$scope.default = options.defaultValue;
 							$scope.random = options.random;
+
+							$scope.cancelText = options.cancelText;
+							$scope.selectText = options.selectText;
 
 							$scope.mdColorAlphaChannel = options.mdColorAlphaChannel;
 							$scope.mdColorSpectrum = options.mdColorSpectrum;

@@ -4,6 +4,10 @@
  * @link https://github.com/brianpkelley/md-color-picker
  * @license MIT
  */
+.md-color-picker-dialog md-tabs.md-default-theme md-ink-bar,
+.md-color-picker-dialog md-tabs md-ink-bar {
+  border-width: 1px !important;
+}
 md-color-picker .md-color-picker-input-container,
 [md-color-picker] .md-color-picker-input-container {
   position: relative;
@@ -67,7 +71,6 @@ md-color-picker .md-color-picker-input-container .md-color-picker-clear,
 }
 .md-color-picker-container .md-color-picker-preview {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   font-weight: bold;
